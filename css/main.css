@@ -79,3 +79,113 @@ body, html {
     margin-right: 2rem;
     font-size: 1.7rem;
 }
+
+/*-- NAV STYLES --*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebedf0;
+    height: 6rem;
+    border: lightgray solid .1rem;
+}
+
+#plusMinus {
+    background-color: white;
+    border: .1rem solid lightgray;
+    width: 4rem;
+    height: 3.3rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+}
+
+#valueInput {
+    width: 10rem;
+    height: 3rem;
+    border-radius: .5rem;
+    border: lightgray .1rem solid;
+    padding-left: .8rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#descriptionInput {
+    width: 30rem;
+    height: 3rem;
+    border-radius: .5rem;
+    border: lightgray .1rem solid;
+    padding-left: .8rem;
+    margin: 0 1.1rem;
+    font-size: 1.2rem;
+}
+
+.checkButton {
+    height: 2.5rem;
+}
+
+.checkButton:hover {
+    cursor: pointer;
+}
+
+/*-- LIST STYLES --*/
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.income, .expenses {
+    width: 35rem;
+    margin: 0 2rem;
+}
+
+#incomeHeading {
+    color: #25c17a;
+    font-size: 1.5rem;
+    border-bottom: lightgray solid .1rem;
+    padding-bottom: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+}
+
+#expensesHeading {
+    color: #f23a42;
+    font-size: 1.5rem;
+    border-bottom: lightgray solid .1rem;
+    padding-bottom: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+}
+
+.expensesList, .incomeList {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.listItem {
+    border-bottom: .1rem solid lightgray;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #444;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .7rem;
+}
+
+.dark {
+    background-color: #ebedf0;
+}
+
+.spanAdd {
+    color: #25c17a;
+}
+
+.spanMinus {
+    color: #f23a42;
+}

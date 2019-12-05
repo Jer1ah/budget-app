@@ -11,16 +11,53 @@
 <body>
 <header class="header">
     <h3 id="monthHeader"></h3>
-    <h1>+ 100.00</h1>
+    <h1>+ 1,400.00</h1>
     <div class="plus">
         <span class="plusLeft">INCOME</span>
-        <span class="plusRight">+ 250.00</span>
+        <span class="plusRight">+ 4,000.00</span>
     </div> <!-- .plus end -->
     <div class="minus">
         <span class="minusLeft">EXPENSES</span>
-        <span class="minusRight">- 150.00</span>
+        <span class="minusRight">- 2,600.00</span>
     </div> <!-- .minus end -->
-</header> <!-- .header end -->    
+</header> <!-- .header end --> 
+<div class="nav">
+    <select name="plusMinus" id="plusMinus">
+        <option value="income">+</option>
+        <option value="expenses">-</option>
+    </select>
+    <input type="text" placeholder="Add description" id="descriptionInput">
+    <input type="text" placeholder="Value" id="valueInput"> 
+    <img src="img/verified.svg" alt="CheckButton" class="checkButton">
+</div> <!-- .nav end -->   
+<div class="list">
+    <div class="income">
+        <h3 id="incomeHeading">INCOME</h3>
+        <ul class="incomeList">
+            <li class="listItem">
+                <span>Website project</span>
+                <span class="spanAdd">+ 2,500.00</span>
+            </li>
+            <li class="listItem dark">
+                <span>Sold car</span>
+                <span class="spanAdd">+ 1,500.00</span>
+            </li>
+        </ul>
+    </div> <!-- .income end -->
+    <div class="expenses">
+        <h3 id="expensesHeading">EXPENSES</h3>
+        <ul class="expensesList">
+            <li class="listItem">
+                <span>Holiday</span>
+                <span class="spanMinus">- 1,700.00</span>
+            </li>
+            <li class="listItem dark">
+                <span>Rent</span>
+                <span class="spanMinus">- 900.00</span>
+            </li>
+        </ul>
+    </div> <!-- .expenses end -->
+</div> <!-- .list end -->
 <script src="js/main.js"></script>
 </body>
 </html>
